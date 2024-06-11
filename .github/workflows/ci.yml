@@ -8,7 +8,7 @@ on:
 
 jobs:
   lint:
-    name: Run linters
+    name: Run health checks
     runs-on: ubuntu-latest
 
     steps:
@@ -23,8 +23,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run health check
+      - name: Run linter
         run: npm run lint
 
-      - name: Run test
+      - name: Run tests
         run: npm run test:ci
