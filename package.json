@@ -1,0 +1,25 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "author": "Lawrence Carvalho",
+  "scripts": {
+    "coverage": "vitest run --coverage",
+    "lint": "biome check",
+    "lint:fix": "biome check --write",
+    "test": "vitest",
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@biomejs/biome": "1.8.1",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.5",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=18.20.3 <=20.13.0"
+  }
+}
