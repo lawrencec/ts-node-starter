@@ -6,5 +6,12 @@ export default defineConfig({
     globals: false,
     environment: 'node',
     include: ['src/**/*.{test,spec}.ts'],
+    reporters: process.env.GITHUB_ACTIONS
+      ? ['verbose', 'github-actions']
+      : ['verbose'],
+    coverage: {
+      reporter: ['text', 'json', 'html'],
+      include: ['src/**/*.ts'],
+    },
   },
 });

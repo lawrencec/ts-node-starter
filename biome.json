@@ -7,14 +7,15 @@
     "indentWidth": 2,
     "lineEnding": "lf",
     "lineWidth": 80,
-    "attributePosition": "auto"
+    "attributePosition": "auto",
+    "ignore": [".idea", "coverage"]
   },
   "organizeImports": {
     "enabled": true
   },
   "linter": {
     "enabled": true,
-    "ignore": [".idea"],
+    "ignore": [".idea", "coverage"],
     "rules": {
       "recommended": false,
       "complexity": {
