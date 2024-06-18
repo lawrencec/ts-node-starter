@@ -7,7 +7,7 @@
     "lint": "biome check",
     "lint:fix": "biome check --write",
     "test": "vitest",
-    "test:ci": "vitest run --coverage",
+    "test:ci": "vitest run --coverage --passWithNoTests",
     "prepare": "husky"
   },
   "keywords": [],
